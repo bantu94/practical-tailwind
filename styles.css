@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .alert {
+    @apply flex flex-col p-4 pt-2 w-full border-l-8;
+  }
+
+  .alert-title {
+    @apply font-semibold italic text-lg;
+  }
+
+  .alert-content {
+    @apply leading-tight text-sm;
+  }
+
+  .alert-info {
+    @apply bg-blue-100 border-blue-500
+  }
+
+  .alert-info-title {
+    @apply text-blue-500;
+  }
+
+  .alert-info-content {
+    @apply text-blue-800;
+  }
+
+  .alert-warning {
+    @apply bg-red-100 border-red-500
+  }
+
+  .alert-warning-title {
+    @apply text-red-500;
+  }
+
+  .alert-warning-content {
+    @apply text-red-800;
+  }
+}
+
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h1, h2, p {
+    @apply my-6 mx-4;
+  }
+}
+
+
+/* start form chapter 5  */
